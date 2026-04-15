@@ -1,0 +1,146 @@
+:root {
+  --bg: #fffaf4;
+  --card: #ffffff;
+  --ink: #2f2a2d;
+  --soft-ink: #5f5560;
+  --accent: #d56b8f;
+  --accent-2: #7abf7a;
+  --border: #f0dde4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 20%, #ffe8f0 0, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e7f7e7 0, transparent 30%), var(--bg);
+  line-height: 1.5;
+}
+
+.hero {
+  min-height: 65vh;
+  padding: 1.25rem 1rem 2.5rem;
+  background: linear-gradient(135deg, rgba(213, 107, 143, 0.13), rgba(122, 191, 122, 0.14));
+  border-bottom: 2px solid var(--border);
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin: 5rem auto 0;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  max-width: 65ch;
+  color: var(--soft-ink);
+}
+
+button {
+  margin-top: 1.2rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.card-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(47, 42, 45, 0.06);
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-head a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.7rem;
+}
+
+.blog-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: linear-gradient(180deg, #fff, #fffdfc);
+}
+
+.blog-card h3 {
+  margin: 0 0 0.4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.placeholder {
+  color: var(--soft-ink);
+}
+
+footer {
+  text-align: center;
+  color: var(--soft-ink);
+  border-top: 1px solid var(--border);
+  padding: 1.2rem;
+}
